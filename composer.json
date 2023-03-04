@@ -1,0 +1,20 @@
+{
+    "name": "zuidwest/s3-live-cleaner",
+    "description": "Script to list and delete files from an S3 bucket. Used for live streaming on Cloudflare R2 that doesn't have an expiration policy. So this is used to clean-up old HLS chuck files every hour.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Raymon Mens",
+            "email": "raymon@zuidwestfm.nl"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZuidWest\\S3LiveCleaner\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
